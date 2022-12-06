@@ -23,8 +23,8 @@
   },
   "//": "@types/cls-hooked is exposed in API so must be in dependencies, not devDependencies",
   "dependencies": {
-    "@aws-sdk/types": "^3.4.1",
     "@aws-sdk/service-error-classification": "^3.4.1",
+    "@aws-sdk/types": "^3.4.1",
     "@types/cls-hooked": "^4.3.3",
     "atomic-batcher": "^1.0.2",
     "cls-hooked": "^4.2.2",
@@ -54,5 +54,9 @@
     "x ray"
   ],
   "license": "Apache-2.0",
-  "repository": "https://github.com/aws/aws-xray-sdk-node/tree/master/packages/core"
+  "repository": "https://github.com/aws/aws-xray-sdk-node/tree/master/packages/core",
+  "devDependencies": {
+    "@aws-sdk/config-resolver": "^3.224.0",
+    "@aws-sdk/smithy-client": "^3.224.0"
+  }
 }
