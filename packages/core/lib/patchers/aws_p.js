@@ -75,7 +75,7 @@ function captureAWSRequest(req) {
 
   var throttledError = this.throttledError || throttledErrorDefault;
 
-  var stack = (new Error()).stack;
+  var stack = "";//(new Error()).stack;
 
   let subsegment;
   if (parent.notTraced) {
